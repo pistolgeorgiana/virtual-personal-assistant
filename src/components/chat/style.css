@@ -1,0 +1,111 @@
+.contains {
+  width: 100%;
+  min-height: 100%;
+  background: #f7f7f7 url("../../assets/chat.jpg") 0 0;
+  position:relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  padding-bottom: 8em;
+}
+
+.Messages-list {
+    padding: 20px 0;
+    height: 26em;
+    max-height: 100%;
+    margin: 0 auto;
+    list-style: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-grow: 1;
+    overflow-y: scroll;
+  }
+  
+  .Messages-message {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .Messages-message.currentMember {
+    /*justify-content: flex-end;*/
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  
+  .Message-content {
+    display: inline-block;
+  }
+  
+  .currentMember > .Message-content {
+    align-items: flex-end;
+  }
+  
+  .Messages-message > .avatar {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px -10px;
+  }
+  
+  .Message-content > .username {
+    display: block;
+    color: gray;
+    font-size: 14px;
+    padding-bottom: 4px;
+  }
+
+  .Message-content > .text {
+    padding: 10px;
+    max-width: 400px;
+    margin: 0;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: "Sriracha", cursive;
+    background-color: cornflowerblue;
+    color: white;
+    display: inline-block;
+  }
+  
+  .currentMember > .Message-content .text {
+    background-color: grey;
+  }
+
+  form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto 40px;
+  }
+  
+  input {
+    padding: 5px;
+    font-size: 30px;
+    font-family: "Sriracha", cursive;
+    border-radius: 8px;
+    border: 1px solid lightskyblue;
+    flex-grow: 1;
+  }
+  
+  button {
+    padding: 5px 20px;
+    font-family: "Sriracha", cursive;
+    font-size: 30px;
+    background-color: lightskyblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 90px;;
+  }
+
+  .send {
+    background: url("../../assets/chat.jpg");
+    color: white;
+    /* bottom: 1em; */
+    position: fixed;
+    left: 0px;
+    /* padding: 10px; */
+  }

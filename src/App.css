@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Sriracha", cursive; */
+  font-size: 15px;
+  font-weight: bold;
+  /* background: url("./assets/illustrations\ pva.jpg") no-repeat; */
+  background-size: cover;
 }
 
 .App-logo {
@@ -14,18 +26,32 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: url("./assets/Header_gif_assembly-1.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  /* min-height: 100vh; */
+  height: 10em;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  padding-right: 150px;
   justify-content: center;
+  font-family: "Sriracha", cursive;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+footer {
+  bottom: 0px;
+  position: fixed;
+  right: 0px;
+  padding: 10px;
+  z-index: 1;
 }
 
 @keyframes App-logo-spin {
